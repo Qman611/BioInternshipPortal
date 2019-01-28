@@ -1,4 +1,3 @@
-
 #container {
 	display: table;
 }
@@ -17,8 +16,7 @@
 	height: 100%;
 	width: 14%;
 	text-align: center;
-	padding-top: 10%;
-	border-right: 5px solid black;
+	padding-top: 1%;
 	background-color: buttonFace;
 	display: table-cell;
 }
@@ -84,6 +82,7 @@ a.button {
 	height: 100%;
 	width: 85%;
 	background-color: #CFB53B;
+	border-left: 3px solid #989898;
 	display: table-cell;
 }
 
