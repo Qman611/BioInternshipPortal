@@ -1,0 +1,57 @@
+#container {
+	display: table;
+}
+#row {
+	display: table-row;
+}
+#col{
+	display: table-column; 
+}
+#cell {
+	display: table-cell;
+}
+
+.sidebar {
+	float: left;  
+	height: 100%;
+	width: 14%; 
+	text-align: center;
+	padding-top: 10%;
+	border-right: 5px solid black;
+	background-color: buttonFace;
+	display: table-cell;
+}
+.sidebar button {
+	width: 100%; 
+	vertical-align: center;
+	height: 90px; 
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.sidebar button:active {
+	background-color: #CFB53B;
+	font-style: bold;
+}
+
+.sidebar button:hover {
+	background-color: buttonface;
+	cursor: pointer; 
+}
+
+.mainScreen {
+	float: right; 
+	height: 100%; 
+	width: 85%;
+	background-color: #CFB53B;
+	display: table-cell;
+}
+
+.footer {
+	width: 100%;
+	background-color: #FFFFFF; 
+	bottom: 0;
+	position: fixed;
+}
+/*
+
+*/
