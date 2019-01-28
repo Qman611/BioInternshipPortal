@@ -17,7 +17,6 @@
 	width: 14%; 
 	text-align: center;
 	padding-top: 1%;
-	border-right: 5px solid black;
 	background-color: buttonFace;
 	display: table-cell;
 }
@@ -43,6 +42,7 @@
 	height: 100%; 
 	width: 85%;
 	background-color: #CFB53B;
+	border-left: 3px solid #989898;
 	display: table-cell;
 }
 
