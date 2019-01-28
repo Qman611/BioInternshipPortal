@@ -16,7 +16,7 @@
 	height: 100%;
 	width: 14%; 
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 1%;
 	border-right: 5px solid black;
 	background-color: buttonFace;
 	display: table-cell;
@@ -51,6 +51,58 @@
 	background-color: #FFFFFF; 
 	bottom: 0;
 	position: fixed;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  background: #E8E8E8;
+  text-align: left;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.jobImage {
+	display: inline;
+	height: 100%;
+	width: 29%;
+}
+
+.jobInfo {
+	display: inline;
+	padding: 1px;
+	margin-left: 7px;
+	width: 40%;
+	height: 100%;
+}
+
+.jobDescription{
+	display: inline;
+	padding: 5px;
+	margin: 5px;
+	height: 100%;
+	background: #f8f8f8;
+	border-radius: 10px;
+}
+
+.noMarginBottom {
+	margin-bottom: 0px;
+}
+
+::placeholder {
+	font-size: 20px;
 }
 /*
 
