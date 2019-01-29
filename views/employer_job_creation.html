@@ -8,13 +8,14 @@
 <div style="width: 100%; height: 100vh;min-width: 500px;" id = "container">
 	<div id = "row">
 		<div id = "sidePanel" class="sidebar">
-			Hello &lt;EMPLOYERNAME&gt;
-			<button class="sidePanelRow">Jobs</button>
-			<button class="sidePanelRow">Applicants</button>
-			<button class="sidePanelRow">Settings</button>
-			<a style = "margin-top: 30px;">log out</a>
+			<h1>Biology Internship Portal</h1>
+            <p>D'Arcy Wentworth Roper</p>
+			<button onclick="window.location.href='employer_jobs.html'" class="sidePanelRow">Jobs</button>
+			<button onclick="window.location.href='applicant_pool.html'" class="sidePanelRow">Applicants</button>
+			<button onclick="window.location.href='employer_settings.html'" class="sidePanelRow">Settings</button>
+			<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
 		</div>
-		<div id = infoPanel class = "mainScreen"> 
+		<div id = infoPanel class = "mainScreen">
 			<div style="display: table; border-collapse: collapse; width: 100%;">
 				<div style = "display: table-row; border-bottom: 2px solid black">
 					<div id = "cell" style = "width: 80%; vertical-align: center;">
@@ -26,16 +27,16 @@
 				<table style="width:100%; border-bottom: 2px solid black;">
 					<tr>
 						<td rowspan="2">
-							<img style = "height: 75px; width: 175px;" src="https://appharbor.com/assets/images/stackoverflow-logo.png"/>
+							<img style = "height: 75px; width: 175px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/US_CDC_logo.svg/1200px-US_CDC_logo.svg.png"/>
 						</td>
 						<td>
 							<input placeholder = "Enter Position Title"></input>
 						</td>
 						<td>
-							<button>Publish</button>
+							<button onclick="window.location.href='employer_jobs.html'">Publish</button>
 						</td>
 						<td>
-							<button>save draft</button>
+							<button onclick="window.location.href='employer_jobs.html'">save draft</button>
 						</td>
 					</tr>
 					<tr>
@@ -43,7 +44,7 @@
 							<input placeholder = "Enter Company Name"></input>
 						</td>
 						<td>
-							<button>Discard</button>
+							<button onclick="window.location.href='employer_jobs.html'">Discard</button>
 						</td>
 						<td>
 							<button>Duplicate</button>
@@ -126,10 +127,10 @@
 						</td>
 					</tr>
 				</table>
-			</div>	
+			</div>
 		</div>
 		<div id= "createJobForm">
-			
+
 		</div>
 	</div>
 </div>
