@@ -1,0 +1,40 @@
+<?php
+
+/** 
+ * This function defines the URL to the page created etc.
+ * See http://api.drupal.org/api/function/hook_menu/6
+ */
+function test_module_menu() {
+  $items = array();
+  $items['test_module/form'] = array(
+    'title' => t('My form'),
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('test_module_my_form'),
+    'access arguments' => array('access content'),
+    'description' => t('My form'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+
+/**
+ * This function gets called in the browser address bar for: 
+ * "http://yourhost/my_module/form" or 
+ * "http://yourhost/?q=my_module/form". It will generate
+ * a page with this form on it.
+ * This function is called the "form builder". It builds the form.
+ */
+function test_module_my_form($form, &$form_state) {
+  $form['name'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Name'),
+  );
+  
+  // Adds a simple submit button that refreshes the form and clears its contents -- this is the default behavior for forms.
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => 'Submit',
+  );
+  return $form;
+}
