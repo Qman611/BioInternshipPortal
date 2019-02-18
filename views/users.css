@@ -53,13 +53,15 @@ a.button {
 
 .card {
   /* Add shadows to create the "card" effect */
-  width:1000px;
+  width:95%;
   display:flex;
   flex-wrap: wrap;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   background-color:#999999;
   margin-top:10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -70,6 +72,11 @@ a.button {
 .card-text {
 
 	display:inline-block;
+}
+
+.card img{
+	height: 100px;
+	width: 100px; 
 }
 
 /* Add some padding inside the card container */
@@ -90,7 +97,7 @@ a.button {
 	width: 100%;
 	background-color: #FFFFFF;
 	bottom: 0;
-	position: fixed;
+	position: relative;
 }
 
 
