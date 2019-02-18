@@ -50,7 +50,7 @@
 	width: 100%;
 	background-color: #FFFFFF; 
 	bottom: 0;
-	position: fixed;
+	position: relative;
 }
 
 .card {

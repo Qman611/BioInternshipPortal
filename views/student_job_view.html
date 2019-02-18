@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bio Internship Portal</title>
+<link rel="stylesheet" href="users.css"/>
+</head>
+<body>
+<div style="width: 100%; height: 100vh;min-width: 500px;" id = "container">
+	<div id = "row">
+		<div id = "sidePanel" class="sidebar">
+			<h1>Biology Internship Portal</h1>
+            <p>D'Arcy Wentworth Roper</p>
+						<button class="sidePanelRow">Jobs</button>
+						<button onclick="window.location.href='student_offers.html'" class="sidePanelRow">Offers</button>
+						<button onclick="window.location.href='student_settings.html'" class="sidePanelRow">Settings</button>
+			<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
+		</div>
+		<div id = infoPanel class = "mainScreen">
+			<div style="display: table; border-collapse: collapse; width: 100%;">
+				<div style = "display: table-row; border-bottom: 2px solid black">
+					<div id = "cell" style = "width: 80%; vertical-align: center;">
+					<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>
+					</div>
+				</div>
+			</div>
+			<div style = "display: table; width: 100%;">
+				<table style="width:100%; border-bottom: 2px solid black;">
+					<tr>
+						<td rowspan="2" style="width: 200px;">
+							<img style = "height: 75px; width: 175px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/US_CDC_logo.svg/1200px-US_CDC_logo.svg.png"/>
+						</td>
+						<td>
+							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">Position Title</label>
+						</td>
+						<td>
+							<button onclick="window.location.href='student_jobs_page.html'" style="width: 90%; height: 30px;">Go Back</button>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">Company Name</label>
+						</td>
+						<td>
+							<button onclick="#" style="width: 90%; height: 30px;">Apply</button>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+			<div >
+				<table style="width: 100%;">
+					<tr>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Job Description:</label></td>
+						<td>
+							<label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Deadline:</label>
+						</td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+						<td>
+							<label><input placeholder="MM / DD / YYYY"/></td>
+						</td>
+					</tr>
+					<tr>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Qualifications:</label></td>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Research Area:</label></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+						<td>
+							<select>
+								<option> N/A </option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Responsibilities<:/label></td>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Degree Level:</label></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+						<td>
+							<label>Some college education</label>
+						</td>
+					</tr>
+					<tr>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Location:</label></td>
+						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Min GPA:</label></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+						<td>
+							<select>
+								<option> N/A</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><label>Work Term</label></td>
+						<td><label>Work Authorization</label></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+					</tr>
+					<tr>
+						<td><label>Desired Start Date</label></td>
+						<td><label>Abstract</label></td>
+					</tr>
+					<tr>
+						<td><input placeholder="Text input"/></td>
+						<td>
+							<label style="text-w">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">
+								Security Clearance: 
+							</label>
+							<label>CIA</label>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id= "createJobForm">
+
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<p>footer items that we need to copy from careerbuzz</p>
+	<a href="somelink.edu">some link</a>
+</div>
+</body>
+
+</html>
