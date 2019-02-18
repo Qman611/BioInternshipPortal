@@ -9,3 +9,42 @@
 .jobDropDown i {
 	float: right;
 }
+
+
+
+#applicantPool {
+	margin-bottom: 15px;
+}
+
+.applicantDropDownContent {
+	width: 100%;
+}
+
+.applicantDropDownContent table {
+	border-collapse: collapse; 
+	text-align: center;
+	color: white;
+	width: 100%;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.applicantDropDownContent tr {
+	border-bottom: 2px solid black;
+	height: 40px;
+}
+
+.applicantDropDownContent .tdCount{
+	width: 10%;
+}
+.applicantDropDownContent .tdName{
+	width: 60%;
+	text-align: left;
+	padding-left: 5px;
+}
+.applicantDropDownContent .tdResume{
+	width: 15%;
+}
+.applicantDropDownContent .tdCoverLetter{
+	width: 15%;
+}
