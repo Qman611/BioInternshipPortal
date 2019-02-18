@@ -30,57 +30,57 @@
 						</br></br>
 						<table align="center">
 							<tbody>
-								<?php
-                                   error_reporting(E_ALL);
-                                   ini_set('display_errors', 'on');
-                                   $dbhost = 'localhost:3306';
-                                   $dbuser = 'portal_user';
-                                   $dbpass = 'portal-password';
-                                   
-                                   $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'BioInternshipPortal_db');
-                                   
-                                   if(mysqli_connect_errno() ) {
-                                      die('Could not connect: ' . mysqli_connect_error());
-                                   }
-                                   echo 'connection ok';
-                                   
-                                   $sql = "SELECT * FROM job_posting_table ";
-                                   $retval = mysqli_query( $conn, $sql);
-                                   
-                                   echo "got back: ".mysqli_num_rows($retval)."rows </br>";
-                                   
-                                   if(! $retval ) {
-                                      die('Could not get data: ' . mysqli_error($conn));
-                                   }
-                                   
-                                   while($row = mysqli_fetch_assoc($retval)) {
-                                    echo '<tr align="center">
-                                            <td class="card">
-                                                <div class="jobImage">
-                                                    <img src="https://www.biospace.com/getasset/efbd9501-0d1d-4763-a2d6-4d2ba6f68349/" class="imgSize">
-                                                </div>
-                                                <div class="jobInfo">
-                                                    <h3>'.$row['job_title'].'</h3>
-                                                    <p class="noMarginBottom">
-                                                        Thermo Fisher Scientific
-                                                        </br>
-                                                        Grand Island, NY
-                                                    </p>
-                                                </div>
-                                                <div class="jobDescription">
-                                                    <p>
-                                                        '.$row['job_description'].'
-                                                    </p>
-                                                </div>
-                                            </td>
-                                        </tr>';
-                                   }
-                                   
-                                   echo "Fetched data successfully\n";
-                                   
-                                   mysqli_close($conn);
-                                
-                                ?>
+<?php
+   error_reporting(E_ALL);
+   ini_set('display_errors', 'on');
+   $dbhost = 'localhost:3306';
+   $dbuser = 'portal_user';
+   $dbpass = 'portal-password';
+   
+   $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'BioInternshipPortal_db');
+   
+   if(mysqli_connect_errno() ) {
+      die('Could not connect: ' . mysqli_connect_error());
+   }
+   echo 'connection ok';
+   
+   $sql = "SELECT * FROM job_posting_table ";
+   $retval = mysqli_query( $conn, $sql);
+   
+   echo "got back: ".mysqli_num_rows($retval)."rows </br>";
+   
+   if(! $retval ) {
+      die('Could not get data: ' . mysqli_error($conn));
+   }
+   
+   while($row = mysqli_fetch_assoc($retval)) {
+    echo '<tr align="center">
+            <td class="card">
+                <div class="jobImage">
+                    <img src="get_image.php?id='.$row['icon_id'].'" class="imgSize">
+                </div>
+                <div class="jobInfo">
+                    <h3>'.$row['job_title'].'</h3>
+                    <p class="noMarginBottom">
+                        Thermo Fisher Scientific
+                        </br>
+                        Grand Island, NY
+                    </p>
+                </div>
+                <div class="jobDescription">
+                    <p>
+                        '.$row['job_description'].'
+                    </p>
+                </div>
+            </td>
+        </tr>';
+   }
+   
+   echo "Fetched data successfully\n";
+   
+   mysqli_close($conn);
+
+?>
 							</tbody>
 						</table>
 					</div>
