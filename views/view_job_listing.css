@@ -1,13 +1,37 @@
-.jobDetails {
-	
-}
-
 .jobDetails table {
 	width: 100%;
+	border-collapse: collapse;
+	box-sizing: border-box;
+	margin-left: 15px;
 }
-.header {
-	color: black; 
+
+.jobViewHeader {
+	color: black;
+	width: 90%; 
+	height: 30px;
 	font-weight: bold; 
-	font-size: 25px; 
+	font-size: 40px;	
+}
+
+.jobDetails label {
+	color: black;
+}
+
+.jobDetails tr {
+	margin-top: 15px;
+}
+
+.jobDetails .rowHeader {
+	padding-top: 20px;
+	border-bottom: 2 px black;
+}
+
+.jobDetails .criteriaHeader {
+	font-weight: bold;
+	font-size: 30px;
 	text-decoration: underline;
+}
+
+.jobDetails .criteriaInfo {
+	padding: 10px;
 }

@@ -3,6 +3,7 @@
 <head>
 <title>Bio Internship Portal</title>
 <link rel="stylesheet" href="users.css"/>
+<link rel="stylesheet" href="view_job_listing.css"/>
 </head>
 <body>
 <div style="width: 100%; height: 100vh;min-width: 500px;" id = "container">
@@ -19,7 +20,7 @@
 			<div style="display: table; border-collapse: collapse; width: 100%;">
 				<div style = "display: table-row; border-bottom: 2px solid black">
 					<div id = "cell" style = "width: 80%; vertical-align: center;">
-					<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>
+					<h1 style="font-size: 40px; color: #F0EAD6; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>
 					</div>
 				</div>
 			</div>
@@ -30,7 +31,7 @@
 							<img style = "height: 75px; width: 175px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/US_CDC_logo.svg/1200px-US_CDC_logo.svg.png"/>
 						</td>
 						<td>
-							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">Position Title</label>
+							<label class="jobViewHeader">Position Title</label>
 						</td>
 						<td>
 							<button onclick="window.location.href='student_jobs_page.html'" style="width: 90%; height: 30px;">Go Back</button>
@@ -38,7 +39,7 @@
 					</tr>
 					<tr>
 						<td>
-							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">Company Name</label>
+							<label class="jobViewHeader">Company Name</label>
 						</td>
 						<td>
 							<button onclick="#" style="width: 90%; height: 30px;">Apply</button>
@@ -49,75 +50,75 @@
 			
 			<div class="jobDetails">
 				<table>
-					<tr class="header">
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Job Description:</label></td>
+					<tr class="rowHeader">
+						<td><label class="criteriaHeader">Job Description:</label></td>
 						<td>
-							<label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Deadline:</label>
+							<label class="criteriaHeader">Deadline:</label>
 						</td>
 					</tr>
 					<tr>
-						<td><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
-						<td>
+						<td class="criteriaInfo"><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
+						<td class="criteriaInfo">
 							<label>MM / DD / YY</label></td>
 						</td>
 					</tr>
-					<tr>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Qualifications:</label></td>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Research Area:</label></td>
+					<tr class="rowHeader">
+						<td><label class="criteriaHeader">Qualifications:</label></td>
+						<td><label class="criteriaHeader">Research Area:</label></td>
 					</tr>
 					<tr>
-						<td><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
-						<td>
+						<td class="criteriaInfo"><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
+						<td class="criteriaInfo">
 							<label>T-Virus development</label>
 						</td>
 					</tr>
 					<tr>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Responsibilities:</label></td>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Degree Level:</label></td>
+						<td><label class="criteriaHeader">Responsibilities:</label></td>
+						<td><label class="criteriaHeader">Degree Level:</label></td>
 					</tr>
 					<tr>
-						<td><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
-						<td>
+						<td class="criteriaInfo"><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
+						<td class="criteriaInfo">
 							<label>Some college education</label>
 						</td>
 					</tr>
 					<tr>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Location:</label></td>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Min GPA:</label></td>
+						<td><label class="criteriaHeader">Location:</label></td>
+						<td><label class="criteriaHeader">Min GPA:</label></td>
 					</tr>
 					<tr>
-						<td><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
-						<td>
+						<td class="criteriaInfo"><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label></td>
+						<td class="criteriaInfo">
 							<label>3.15</label>
 						</td>
 					</tr>
 					<tr>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Work Term:</label></td>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Work Authorization:</label></td>
+						<td><label class="criteriaHeader">Work Term:</label></td>
+						<td><label class="criteriaHeader">Work Authorization:</label></td>
 					</tr>
 					<tr>
-						<td><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</label</td>
-						<td><label>"CDC" Employee</label></td>
+						<td class="criteriaInfo"><label>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</label</td>
+						<td class="criteriaInfo"><label>"CDC" Employee</label></td>
 					</tr>
 					<tr>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Desired Start Date:</label></td>
-						<td><label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">Abstract:</label></td>
+						<td><label class="criteriaHeader">Desired Start Date:</label></td>
+						<td><label class="criteriaHeader">Abstract:</label></td>
 					</tr>
 					<tr>
-						<td><label>MM / DD / YYYY</label></td>
-						<td>
+						<td class="criteriaInfo"><label>MM / DD / YYYY</label></td>
+						<td class="criteriaInfo">
 							<label style="text-w">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,</label>
 						</td>
 					</tr>
 					<tr>
 						<td>
-							<label style="font-weight: bold; font-size: 20px; text-decoration: underline; ">
+							<label class="criteriaHeader">
 								Security Clearance: 
 							</label>
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<td class="criteriaInfo">
 							<label>Top Secret</label>
 						</td>
 					</tr>
