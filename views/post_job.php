@@ -4,7 +4,7 @@
     //print_r($_FILES['icon_upload']);
 
     //echo '</br>';
-    
+
     $dbhost = 'localhost:3306';
     $dbuser = 'portal_user';
     $dbpass = 'portal-password';
@@ -31,9 +31,10 @@
         $location = mysqli_escape_string($conn,$_POST['location']);
         $work_term = mysqli_escape_string($conn,$_POST['work_term']);
         $research_area = mysqli_escape_string($conn,$_POST['research_area']);
-        
-        
-        $sql = "INSERT INTO `job_posting_table` 
+
+        // sorry to anyone who has to deal with this ;)
+
+        $sql = "INSERT INTO `job_posting_table`
         (`employer_id`,
         `job_title`,
         `post_date`,
