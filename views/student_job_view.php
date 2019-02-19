@@ -37,11 +37,7 @@
 		</div>
 		<div id = infoPanel class = "mainScreen">
 			<div style="display: table; border-collapse: collapse; width: 100%;">
-				<div style = "display: table-row; border-bottom: 2px solid black">
-					<div id = "cell" style = "width: 80%; vertical-align: center;">
-					<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>
-					</div>
-				</div>
+				<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>x`	
 			</div>
 			<?php
 			$sql = 'SELECT company_name FROM user_table WHERE user_id ='.$row['employer_id'];
