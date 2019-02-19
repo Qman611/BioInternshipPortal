@@ -31,6 +31,8 @@
         $location = mysqli_escape_string($conn,$_POST['location']);
         $work_term = mysqli_escape_string($conn,$_POST['work_term']);
         $research_area = mysqli_escape_string($conn,$_POST['research_area']);
+        $abstract = mysqli_escape_string($conn,$_POST['abstract']);
+        $security = mysqli_escape_string($conn,$_POST['security']);
 
         // sorry to anyone who has to deal with this ;)
 
@@ -49,7 +51,9 @@
         `degree_level`,
         `min_gpa`,
         `work_authorization`,
-        `icon_id`) VALUES
+        `icon_id`,
+        `abstract`,
+        `security_clearance`) VALUES
         ('{$employer_id}',
         '{$pos_title}',
         CURDATE(),
@@ -64,7 +68,9 @@
         '{$_POST['degree_level']}',
         '{$_POST['min_gpa']}',
         '{$_POST['work_auth']}',
-        {$last_id}
+        {$last_id},
+        '{$abstract}',
+        '{$security}'
         )";
         if(mysqli_query($conn, $sql)){
             echo "Job added";
