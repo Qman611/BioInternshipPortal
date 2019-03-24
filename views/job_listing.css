@@ -1,0 +1,43 @@
+.jobContainer {
+	width: 100%;
+	margin: 0 auto; 
+	padding: 10px; 
+	display: table;
+}
+input {
+	height: 30px;
+}
+
+#containerLeft {
+	width: 65%;
+	display: table-cell;
+	float: left;
+	padding-bottom: 10px;
+}
+#containerRight {
+	width: 35%;
+	display: table-cell;
+	float: right;
+}
+
+.criteriaHeader {
+	font-weight: bold;
+	font-size: 30px;
+	text-decoration: underline;
+	color: black;
+	display: block;
+	margin-top: 15px;
+}
+
+.criteriaInfo {
+	width: 90%;	
+	max-width: 675px;
+	margin-top: 15px;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
