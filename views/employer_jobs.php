@@ -52,7 +52,7 @@
 				'.$company_name.'
 				</h1>
 			</div>
-			<button onclick="window.location.href='employer_job_creation.php'" style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
+			<button onclick="window.location.href="employer_job_creation.php" style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
 
 		</div>
 	</div>
