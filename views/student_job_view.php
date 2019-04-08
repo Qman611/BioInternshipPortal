@@ -5,6 +5,8 @@
 <head>
 <title>Bio Internship Portal</title>
 <link rel="stylesheet" href="users.css"/>
+<link rel="stylesheet" href="view_job_listing.css"/>
+<script src="Apply.js"></script>
 </head>
 <body>
 <?php
@@ -71,6 +73,17 @@
 						</td>
 					</tr>
 				</table>
+			</div>
+			
+			<div id="abc" style="display: none; margin: 20px; border: 5px solid black;">
+				<div id="popupContact" style="padding: 15px; vertical-align: center;text-align: center;">
+					<form action="#" id="form" method="post" name="form">
+						<img src="" onclick="div_hide()"/>
+						Resume: <input id="resume" name="resume" placeholder="resume" type="file">
+						Cover letter: <input id="cover_letter" name="cover_letter" placeholder="cover_letter" type="file">
+						<a href="javascript:%20check_empty()" id="submit">Submit</a>
+					</form>
+				</div>
 			</div>
 
 			<div class="jobDetails">
