@@ -37,7 +37,7 @@
 						<button onclick="window.location.href='student_settings.php'" class="sidePanelRow">Settings</button>
 			<a href="BIP_login.php" style = "margin-top: 30px;" class="button">Log Out </a>
 		</div>
-		<div id = infoPanel class = "mainScreen">
+		<div id = "infoPanel" class = "mainScreen">
 			<div style="display: table; border-collapse: collapse; width: 100%;">
 				<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>x`
 			</div>
