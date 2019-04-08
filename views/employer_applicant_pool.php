@@ -50,29 +50,56 @@
 							<button class="jobDropDown">'.$row['job_title'].' &#40;Job ID: '.$row['job_id'].'&#41;
 								<i>&#9660;</i>
 							</button>
-							<div class="applicantDropDownContent" style="display: block;">
-								<table>
-									<tr>
-										<td class="tdCount">1</td>
-										<td class="tdName">John Smith</td>
-										<td class="tdResume">View Resume</td>
-										<td class="tdCoverLetter">View Cover Letter</td>
-									</tr>
-									<tr>
-										<td class="tdCount">2</td>
-										<td class="tdName">Samantha Gomez</td>
-										<td class="tdResume">View Resume</td>
-										<td class="tdCoverLetter">View Cover Letter</td>
-									</tr>
-									<tr>
-										<td class="tdCount">3</td>
-										<td class="tdName">Jane Smith</td>
-										<td class="tdResume">View Resume</td>
-										<td class="tdCoverLetter">View Cover Letter</td>
-									</tr>
-								</table>
-							</div>
-						</div>';
+                            <div class="applicantDropDownContent" style="display: block;">
+                                <table>';
+
+                        $sql = "SELECT * FROM job_application_table WHERE job_id = '{$row['job_id']}'";
+                        $applicants = mysqli_query( $conn, $sql);
+
+                       //echo "got back: ".mysqli_num_rows($retval)."rows </br>";
+
+                        if(!$applicants) {
+                           die('Could not get data: ' . mysqli_error($conn));
+                        }
+                        $count = 0;
+                        while ($row2 = mysqli_fetch_assoc($applicants)){
+                            $sql = "SELECT * FROM user_table WHERE user_id = '{$row2['student_id']}'";
+                            $user = mysqli_fetch_assoc(mysqli_query( $conn, $sql));
+                            $count = $count + 1;
+
+                            echo'
+								<tr>
+									<td class="tdCount">'.$count.'</td>
+									<td class="tdName">'.$user['first_name'].' '.$user['last_name'].'</td>
+									<td class="tdResume">
+                                        <a href="get_resume.php?id='.$row2['resume_id'].'">
+                                            <button type="submit">View Resume</button>
+                                        </a>
+                                    </td>
+									<td class="tdCoverLetter">
+                                        <a href="get_cover_letter.php?id='.$row2['resume_id'].'">
+                                            <button type="submit">View Resume</button>
+                                        </a>
+                                    </td>
+                                    <td class="tdCoverLetter">
+                                        <form action="update_application_status.php" id="form" method="post" name="form">
+                                            <input type="hidden" id="id" name="id" value='.$row2['job_application_id'].'>
+                                            <input type="hidden" id="update" name="update" value="Accepted">
+                                            <button type="submit">Accept</button>
+                                        </form>
+                                    </td>
+                                    <td class="tdCoverLetter">
+                                        <form action="update_application_status.php" id="form" method="post" name="form">
+                                            <input type="hidden" id="id" name="id" value='.$row2['job_application_id'].'>
+                                            <input type="hidden" id="update" name="update" value="Rejected">
+                                            <button type="submit">Reject</button>
+                                        </form>
+                                    </td>
+								</tr>';
+                        }
+                        echo '</table>
+                            </div>
+                            </div>';
 					}
 				?>
 
