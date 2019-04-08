@@ -4,12 +4,25 @@
     //print_r($_FILES['icon_upload']);
 
     //echo '</br>';
+    
+
 
     $dbhost = 'localhost:3306';
     $dbuser = 'portal_user';
     $dbpass = 'portal-password';
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'BioInternshipPortal_db');
+    
+    if (array_key_exists('username', $_COOKIE) && array_key_exists('usertype', $_COOKIE)) {
+        $employer_id = (string)$_COOKIE['username'];
+        $employer_id = mysqli_escape_string($conn,$employer_id);
+    } else {
+        echo "Not logged in";
+        $url = 'login.php';
+        header('Location: ' . $url, true, 303);
+        die();
+    }
+    
     $file_content = mysqli_escape_string($conn, file_get_contents($_FILES['icon_upload']['tmp_name']));
     //$file_content = 'file content goes here'
     if(mysqli_connect_errno() ) {
@@ -17,13 +30,13 @@
     }
     //TODO: Upload icon and keep id
     //echo 'uploading image';
-    $sql = "INSERT INTO `cpny_icon_table` (`employer_id`, `image_data`) VALUES ('{$_POST['employer_id']}', '{$file_content}')";
+    $sql = "INSERT INTO `cpny_icon_table` (`employer_id`, `image_data`) VALUES ('{$employer_id }', '{$file_content}')";
     if(mysqli_query($conn, $sql)){
         // Obtain last inserted id
         $last_id = mysqli_insert_id($conn);
         //echo "Records inserted successfully. Last inserted ID is: " . $last_id;
         //Now add job entry
-        $employer_id = mysqli_escape_string($conn,$_POST['employer_id']);
+        
         $pos_title = mysqli_escape_string($conn,$_POST['pos_title']);
         $job_desc = mysqli_escape_string($conn,$_POST['job_desc']);
         $qualification = mysqli_escape_string($conn,$_POST['qualification']);

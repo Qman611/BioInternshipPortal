@@ -5,6 +5,24 @@
 <link rel="stylesheet" href="users.css"/>
 </head>
 <body>
+<?php
+    if (array_key_exists('username', $_COOKIE) && array_key_exists('usertype', $_COOKIE)) {
+        echo sprintf("Logged-in user: %s",(string)$_COOKIE['username']);
+        if ((string)$_COOKIE['usertype'] == 'student') {
+            echo "Student can't post job";
+            $url = 'login.php';
+            header('Location: ' . $url, true, 303);
+            die();
+        }
+        
+    } else {
+        echo "Not logged in";
+        $url = 'login.php';
+        header('Location: ' . $url, true, 303);
+        die();
+    }
+?>
+
 <div style="width: 100%; height: 100vh;min-width: 500px;" id = "container">
 	<div id = "row">
 		<div id = "sidePanel" class="sidebar">
@@ -42,9 +60,9 @@
 						</td>
 					</tr>
 					<tr>
-						<td>
+						<!--td>
 							<input type="text" name="employer_id" placeholder = "Enter Employer ID"></input>
-						</td>
+						</td-->
 						<td>
 							<button onclick="window.location.href='employer_jobs.html'">Discard</button>
 						</td>
