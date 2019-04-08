@@ -14,9 +14,9 @@
     if(mysqli_connect_errno() ) {
       die('Could not connect: ' . mysqli_connect_error());
     }
-
-    $resume_file = mysqli_escape_string($conn,$_POST['resume']);
-    $cover_letter_file = mysqli_escape_string($conn,$_POST['cover_letter']);
+    print_r($_FILES);
+    $resume_file = mysqli_escape_string($conn,file_get_contents($_FILES['resume']['tmp_name']));
+    $cover_letter_file = mysqli_escape_string($conn,file_get_contents($_FILES['cover_letter']['tmp_name']));
     $student_id = 'Sengoku';
     $placeholder_application_id = -1;
     $file_name = 'Sengoku_resume.pdf';
