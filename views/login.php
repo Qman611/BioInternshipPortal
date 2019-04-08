@@ -11,7 +11,7 @@
             <option value="second">Second</option>
             <option value="third">Third</option>
           </select>
-          <input type="submit" value="Submit the form"/>
+          <input type="submit" value="Login"/>
         </form>
     </body>
 </html>

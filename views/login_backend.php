@@ -23,6 +23,9 @@
         }
         //print_r($retval);
         if($retval->num_rows < 1) {
+            //delete old cookies
+            setcookie("username", "", time() - 3600);
+            setcookie("usertype", "", time() - 3600);
             die('User not found: '.$_POST['username']);
         }
         $row = mysqli_fetch_assoc($retval);
