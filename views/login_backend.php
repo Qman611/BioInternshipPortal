@@ -41,7 +41,7 @@
         } elseif ($row['user_type'] == 'employer') {
             $url = 'employer_jobs.php';
         } else {
-            $url = 'user_list.php';
+            $url = 'user_list.html';
         }
         header('Location: ' . $url, true, 303);
     } else {
