@@ -33,9 +33,9 @@
 			<h1>Biology Internship Portal</h1>
             <p>D'Arcy Wentworth Roper</p>
 						<button onclick="window.location.href='student_jobs_page.php'" class="sidePanelRow">Jobs</button>
-						<button onclick="window.location.href='student_offers.html'" class="sidePanelRow">Offers</button>
-						<button onclick="window.location.href='student_settings.html'" class="sidePanelRow">Settings</button>
-			<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
+						<button onclick="window.location.href='student_offers.php'" class="sidePanelRow">Offers</button>
+						<button onclick="window.location.href='student_settings.php'" class="sidePanelRow">Settings</button>
+			<a href="BIP_login.php" style = "margin-top: 30px;" class="button">Log Out </a>
 		</div>
 		<div id = infoPanel class = "mainScreen">
 			<div style="display: table; border-collapse: collapse; width: 100%;">
@@ -61,7 +61,7 @@
 							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">'.$row['job_title'].'</label>
 						</td>
 						<td>
-							<button onclick="window.location.href="student_jobs_page.html"" style="width: 90%; height: 30px;">Go Back</button>
+							<button onclick="window.location.href="student_jobs_page.php"" style="width: 90%; height: 30px;">Go Back</button>
 						</td>
 					</tr>
 					<tr>
