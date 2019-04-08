@@ -35,10 +35,10 @@
 			<div id = "sidePanel" class="sidebar">
 				<h1>Biology Internship Portal</h1>
         <p>D'Arcy Wentworth Roper</p>
-				<button onclick="window.location.href='employer_jobs.html'" class="sidePanelRow">Jobs</button>
+				<button onclick="window.location.href='employer_jobs.php'" class="sidePanelRow">Jobs</button>
 				<button class="sidePanelRow">Applicants</button>
-				<button onclick="window.location.href='employer_settings.html'" class="sidePanelRow">Settings</button>
-				<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
+				<button onclick="window.location.href='employer_settings.php'" class="sidePanelRow">Settings</button>
+				<a href="BIP_login.php" style = "margin-top: 30px;" class="button">log out </a>
 			</div>
 			<div id = infoPanel class = "mainScreen">
 				<h1 align = "center" style="font-size: 40px; color: #F0EAD6">Pool of Applicants</h1>

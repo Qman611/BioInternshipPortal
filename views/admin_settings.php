@@ -10,8 +10,8 @@
                     <div id = "sidePanel" class="sidebar">
                         <h1>Biology Internship Portal</h1>
                         <p>Dr. Emily Weigel</p>
-                        <button onclick="window.location.href='admin_jobs.html'" class="sidePanelRow">Jobs</button>
-                        <button onclick="window.location.href='user_list.html'" class="sidePanelRow">Users</button>
+                        <button onclick="window.location.href='admin_jobs.php'" class="sidePanelRow">Jobs</button>
+                        <button onclick="window.location.href='user_list.php'" class="sidePanelRow">Users</button>
                         <button class="sidePanelRow">Settings</button>
                         <a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
                     </div>
