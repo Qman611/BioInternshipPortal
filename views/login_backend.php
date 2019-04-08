@@ -36,6 +36,14 @@
         setcookie("usertype", $row['user_type']);
         echo 'Login successful</br>';
         echo '<a href="javascript:history.back()">Go Back</a>';
+        if ($row['user_type'] == 'student') {
+            $url = 'student_jobs_page.php';
+        } elseif ($row['user_type'] == 'employer') {
+            $url = 'employer_jobs.php';
+        } else {
+            $url = 'user_list.html';
+        }
+        header('Location: ' . $url, true, 303);
     } else {
         echo 'Header missing username';
     }

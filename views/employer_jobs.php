@@ -19,9 +19,7 @@
 				<div style="display: table;border-bottom: 2px solid black; width: 100%;">
 <?php
 	// delete when $id is actually employer id
-	$employer_id = '123';
-
-	$id = $_GET['id'];
+	$id = (string)$_COOKIE['username'];
 
 	error_reporting(E_ALL);
     ini_set('display_errors', 'on');
@@ -36,7 +34,8 @@
     }
     
     // replace $employer_id with $id when it's valid
-    $sql = "SELECT company_name FROM user_table WHERE user_id=".$employer_id;
+    $sql = "SELECT company_name FROM user_table WHERE user_id='".$id."'";
+    //echo $sql;
     $company_name_query = mysqli_query($conn, $sql);
 
     $company_name = "Thermo Fisher Scientific";		//dummy value
@@ -52,7 +51,7 @@
 				'.$company_name.'
 				</h1>
 			</div>
-			<button onclick="window.location.href='employer_job_creation.php'" style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
+			<button onclick="window.location.href="employer_job_creation.php" style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
 
 		</div>
 	</div>
@@ -60,7 +59,7 @@
 			<tbody>';
 	
 	// replace $employer_id with $id when it's valid
-	$sql = "SELECT * FROM job_posting_table where employer_id = ".$employer_id;
+	$sql = "SELECT * FROM job_posting_table where employer_id = '".$id."'";
     $retval = mysqli_query( $conn, $sql);
 
     if(!$retval) {
