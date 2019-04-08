@@ -1,5 +1,5 @@
 <?php
-    print_r($_POST);
+    //print_r($_POST);
     if (array_key_exists('username', $_POST)) {
         //TODO: Read user type from database
         $dbhost = 'localhost:3306';
@@ -22,14 +22,16 @@
            die('Could not get data: ' . mysqli_error($conn));
         }
         //print_r($retval);
+        if($retval->num_rows < 1) {
+            die('User not found: '.$_POST['username']);
+        }
         $row = mysqli_fetch_assoc($retval);
-        print_r($row);
         
-        
+        //print_r($row);
         
         setcookie("username", $row['user_id']);
         setcookie("usertype", $row['user_type']);
-        echo 'Cookie set';
+        echo 'Login successful';
     } else {
         echo 'Header missing username';
     }
