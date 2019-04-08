@@ -78,7 +78,7 @@
                                     </td>
 									<td class="tdCoverLetter">
                                         <a href="get_cover_letter.php?id='.$row2['resume_id'].'">
-                                            <button type="submit">View Resume</button>
+                                            <button type="submit">View Cover Letter</button>
                                         </a>
                                     </td>
                                     <td class="tdCoverLetter">
