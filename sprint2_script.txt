@@ -1,0 +1,12 @@
+As an employer, I will create a job listing.
+
+~navigate to create job listing page~
+
+Here is the create job listing page. Using this page, you can add new job listings to our database.
+
+~~cut here~~
+
+And here is a job listing we prepared earlier. Now we can hit submit and send it into the database.
+~clicks~
+This indicates that the job listing had been posted successfully
+~end~
