@@ -39,7 +39,7 @@
         if ($row['user_type'] == 'student') {
             $url = 'student_jobs_page.php';
         } elseif ($row['user_type'] == 'employer') {
-            $url = 'employer_jobs.php?id='.$row['user_id'];
+            $url = 'employer_jobs.php';
         } else {
             $url = 'user_list.php';
         }
