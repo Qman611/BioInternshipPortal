@@ -34,7 +34,8 @@
         
         setcookie("username", $row['user_id']);
         setcookie("usertype", $row['user_type']);
-        echo 'Login successful';
+        echo 'Login successful</br>';
+        echo '<a href="javascript:history.back()">Go Back</a>';
     } else {
         echo 'Header missing username';
     }

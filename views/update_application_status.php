@@ -23,4 +23,5 @@
     } else {
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     }
+    echo '</br><a href="javascript:history.back()">Go Back</a>';
 ?>

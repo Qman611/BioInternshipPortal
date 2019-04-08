@@ -77,7 +77,7 @@
 
 			<div id="abc" style="display: none; margin: 20px; border: 5px solid black;">
 				<div id="popupContact" style="padding: 15px; vertical-align: center;text-align: center;">
-					<form action="submit_application.php" id="form" method="post" name="form">
+					<form action="submit_application.php" id="form" method="post" name="form" enctype="multipart/form-data">
 						<img src="" onclick="div_hide()"/>
 						<input type="hidden" id="job_id" name="job_id" value='.$id.'>
 						Resume: <input id="resume" name="resume" placeholder="resume" type="file">

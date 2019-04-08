@@ -5,4 +5,5 @@
     } else {
         echo "Not logged in";
     }
+    echo '</br><a href="javascript:history.back()">Go Back</a>';
 ?>
