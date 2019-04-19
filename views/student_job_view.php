@@ -33,13 +33,13 @@
 			<h1>Biology Internship Portal</h1>
             <p>D'Arcy Wentworth Roper</p>
 						<button onclick="window.location.href='student_jobs_page.php'" class="sidePanelRow">Jobs</button>
-						<button onclick="window.location.href='student_offers.php'" class="sidePanelRow">Offers</button>
-						<button onclick="window.location.href='student_settings.php'" class="sidePanelRow">Settings</button>
-			<a href="BIP_login.php" style = "margin-top: 30px;" class="button">Log Out </a>
+						<button onclick="window.location.href='student_offers.html'" class="sidePanelRow">Offers</button>
+						<button onclick="window.location.href='student_settings.html'" class="sidePanelRow">Settings</button>
+			<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
 		</div>
-		<div id = "infoPanel" class = "mainScreen">
+		<div id = infoPanel class = "mainScreen">
 			<div style="display: table; border-collapse: collapse; width: 100%;">
-				<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>x`
+				<h1 style="font-size: 40px; color: #F0EAD6; display: table-cell; width: 100%; text-align: center;">&#40New&#41 Job Listing</h1>x`	
 			</div>
 			<?php
 			$sql = 'SELECT company_name FROM user_table WHERE user_id ='.$row['employer_id'];
@@ -61,7 +61,7 @@
 							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">'.$row['job_title'].'</label>
 						</td>
 						<td>
-							<button onclick="window.location.href="student_jobs_page.php"" style="width: 90%; height: 30px;">Go Back</button>
+							<button onclick="window.location.href="student_jobs_page.html"" style="width: 90%; height: 30px;">Go Back</button>
 						</td>
 					</tr>
 					<tr>
@@ -69,17 +69,16 @@
 							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">'.$company_name.'</label>
 						</td>
 						<td>
-							<button id="popup" onclick="div_show()" style="width: 90%; height: 30px;">Apply</button>
+							<button onclick="#" style="width: 90%; height: 30px;">Apply</button>
 						</td>
 					</tr>
 				</table>
 			</div>
-
+			
 			<div id="abc" style="display: none; margin: 20px; border: 5px solid black;">
 				<div id="popupContact" style="padding: 15px; vertical-align: center;text-align: center;">
-					<form action="submit_application.php" id="form" method="post" name="form" enctype="multipart/form-data">
+					<form action="#" id="form" method="post" name="form">
 						<img src="" onclick="div_hide()"/>
-						<input type="hidden" id="job_id" name="job_id" value='.$id.'>
 						Resume: <input id="resume" name="resume" placeholder="resume" type="file">
 						Cover letter: <input id="cover_letter" name="cover_letter" placeholder="cover_letter" type="file">
 						<a href="javascript:%20check_empty()" id="submit">Submit</a>

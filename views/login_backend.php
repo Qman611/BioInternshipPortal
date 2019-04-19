@@ -1,5 +1,5 @@
 <?php
-    //print_r($_POST);
+    print_r($_POST);
     if (array_key_exists('username', $_POST)) {
         //TODO: Read user type from database
         $dbhost = 'localhost:3306';
@@ -22,28 +22,14 @@
            die('Could not get data: ' . mysqli_error($conn));
         }
         //print_r($retval);
-        if($retval->num_rows < 1) {
-            //delete old cookies
-            setcookie("username", "", time() - 3600);
-            setcookie("usertype", "", time() - 3600);
-            die('User not found: '.$_POST['username']);
-        }
         $row = mysqli_fetch_assoc($retval);
-
-        //print_r($row);
-
+        print_r($row);
+        
+        
+        
         setcookie("username", $row['user_id']);
         setcookie("usertype", $row['user_type']);
-        echo 'Login successful</br>';
-        echo '<a href="javascript:history.back()">Go Back</a>';
-        if ($row['user_type'] == 'student') {
-            $url = 'student_jobs_page.php';
-        } elseif ($row['user_type'] == 'employer') {
-            $url = 'employer_jobs.php';
-        } else {
-            $url = 'user_list.php';
-        }
-        header('Location: ' . $url, true, 303);
+        echo 'Cookie set';
     } else {
         echo 'Header missing username';
     }
