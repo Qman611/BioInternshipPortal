@@ -1,7 +1,7 @@
 # BioInternshipPortal
 Georgia Tech Biology Internship Portal
 
-# Release Notes version BioInternshipPortal 1.0
+## Release Notes version BioInternshipPortal 1.0
 NEW FEATURES:
 * Implemented user profiles with cookies for maintaining sign-in
 * Implemented Student view with the following:
@@ -31,8 +31,7 @@ BUG FIXES:
 * All buttons now navigate to the correct page
 * Fixed styling issue causing buttons to appear different on different pages
 
-KNOWN BUGS:
-* 
+KNOWN BUGS: 
 
 FUTURE WORK:
 * Implement Georgia Tech CAS Login system
