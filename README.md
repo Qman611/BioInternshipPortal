@@ -40,3 +40,16 @@ FUTURE WORK:
 - [ ] Collaborate with Georgia Tech OIT to receive server space for data storage and web hosting
 - [ ] Implement Notifications that send alerts to appropriate email accounts associated with users' Georgia Tech accounts
 
+## Install Guide BioInternshipPortal 1.0
+PRE-REQUISITES
+
+DEPENDENCIES
+
+DOWNLOAD INSTRUCTIONS
+
+BUILD INSTRUCTIONS
+
+INSTALLATION
+
+RUNNING APPLICATION
+
