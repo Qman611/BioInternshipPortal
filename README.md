@@ -28,28 +28,58 @@ NEW FEATURES:
 	- [x] Notifications
 
 BUG FIXES:
-- [x] All buttons now navigate to the correct page
+- [ ] All buttons now navigate to the correct page
 - [x] Fixed styling issue causing buttons to appear different on different pages
+- [x] Admin was being transferred to a student profile when clicking on a job listing
 
 KNOWN BUGS:
-- [ ] Nothing works
+- [ ] Data is not secure. Can be remedied by hosting on OIT servers
+- [ ] Stylings are not all uniform
+- [ ] Edit job listing for employer does not work
 
 FUTURE WORK:
 - [ ] Implement Georgia Tech CAS Login system
 - [ ] Coordinate with Georgia Tech Registrar's Office to obtain data usage permissions
 - [ ] Collaborate with Georgia Tech OIT to receive server space for data storage and web hosting
 - [ ] Implement Notifications that send alerts to appropriate email accounts associated with users' Georgia Tech accounts
+- [ ] Create a student applicant profile page for employers to view
+- [ ] Receive permission to implement Georgia Tech copyrighted web design style
+- [ ] Allow Employers and/or Admin to duplicate job listing
+- [ ] Allow Students to view status of jobs applied to
+- [ ] Allow Students accept/reject offers
+- [ ] Allow Admin to ban users
+- [ ] Allow Admin to xend announcements to groups of users
+- [ ] Allow Admin to view statistics on site usage
+- [ ] Docu-sign integration
+- [ ] Filter job listings
 
 ## Install Guide BioInternshipPortal 1.0
 PRE-REQUISITES
+	A linux machine capable of running PHP and MariaDB
 
 DEPENDENCIES
+	1. PHP of version 7.2 or higher
+	2. MariaDB of version 10.2 or higher
+	3. PhpMyAdmin of version 4.6.6 or higher
 
 DOWNLOAD INSTRUCTIONS
-
-BUILD INSTRUCTIONS
+	Download the repository from Github to th intended download location
 
 INSTALLATION
+	1. Copy files from view folder to {/var/www/html} on the server
+	2. Set up MariaDB on port 3306 with username of {portal_user} and password {portal-password}
+	3. Import {BioInternshipPortal_db.sql} into PhpMyAdmin. This will set up the tables with test data.
+	4. Verify proper operations of the system with the provided test data
+	5. (Optional) Change the database access credentials in PhpMyAdmin based on security requirements
+	6. Delete the test data from all tables using PhpMyAdmin
 
 RUNNING APPLICATION
+	Access the server on port 80 using a web browser
+
+TROUBLESHOOTING
+	Server not responding on port 80:
+		* Make sure PHP is actually running
+	Database connection issues:
+		* Make sure MariaDB is running on the correct port with the correct credentials
+		* PhpMyAdmin can also be used to verify the status of the database
 
