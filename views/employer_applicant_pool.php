@@ -53,6 +53,16 @@
 							<div class="applicantDropDownContent" style="display: block;">
 								<table>
 									<tr>
+										<td class="tdCount">Application<br>Position </td>
+										<td class="tdName">Applicant Name</td>
+										<td class="tdResume">
+											<button>Download All<br>Resumes</button>
+										</td>
+										<td class="tdCoverLetter">
+											<button>Download All<br>Cover Letters</button>
+										</td>
+									</tr>
+									<tr>
 										<td class="tdCount">1</td>
 										<td class="tdName">John Smith</td>
 										<td class="tdResume">View Resume</td>
