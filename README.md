@@ -60,30 +60,30 @@ FUTURE WORK:
 
 ## Install Guide BioInternshipPortal 1.0 ##
 PRE-REQUISITES:
-	* A linux machine capable of running PHP and MariaDB
+* A linux machine capable of running PHP and MariaDB
 
 DEPENDENCIES:
-	* PHP of version 7.2 or higher
-	* MariaDB of version 10.2 or higher
-	* PhpMyAdmin of version 4.6.6 or higher
+* PHP of version 7.2 or higher
+* MariaDB of version 10.2 or higher
+* PhpMyAdmin of version 4.6.6 or higher
 
 DOWNLOAD INSTRUCTIONS:
-	* Download the repository from Github to th intended download location
+* Download the repository from Github to th intended download location
 
 INSTALLATION:
-	* Copy files from view folder to {/var/www/html} on the server
-	* Set up MariaDB on port 3306 with username of {portal_user} and password {portal-password}
-	* Import {BioInternshipPortal_db.sql} into PhpMyAdmin. This will set up the tables with test data.
-	* Verify proper operations of the system with the provided test data
-	* (Optional) Change the database access credentials in PhpMyAdmin based on security requirements
-	* Delete the test data from all tables using PhpMyAdmin
+* Copy files from view folder to {/var/www/html} on the server
+* Set up MariaDB on port 3306 with username of {portal_user} and password {portal-password}
+* Import {BioInternshipPortal_db.sql} into PhpMyAdmin. This will set up the tables with test data.
+* Verify proper operations of the system with the provided test data
+* (Optional) Change the database access credentials in PhpMyAdmin based on security requirements
+* Delete the test data from all tables using PhpMyAdmin
 
 RUNNING APPLICATION:
-	* Access the server on port 80 using a web browser
+* Access the server on port 80 using a web browser
 
 TROUBLESHOOTING:
-	Server not responding on port 80:
-		* Make sure PHP is actually running
-	Database connection issues:
-		* Make sure MariaDB is running on the correct port with the correct credentials
-		* PhpMyAdmin can also be used to verify the status of the database
+* Server not responding on port 80:
+	* Make sure PHP is actually running
+* Database connection issues:
+	* Make sure MariaDB is running on the correct port with the correct credentials
+	* PhpMyAdmin can also be used to verify the status of the database
