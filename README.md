@@ -31,7 +31,8 @@ BUG FIXES:
 - [x] All buttons now navigate to the correct page
 - [x] Fixed styling issue causing buttons to appear different on different pages
 
-KNOWN BUGS: 
+KNOWN BUGS:
+- [ ] Nothing works
 
 FUTURE WORK:
 - [ ] Implement Georgia Tech CAS Login system
