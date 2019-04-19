@@ -28,6 +28,15 @@ NEW FEATURES:
 	* Notifications
 
 BUG FIXES:
+* All buttons now navigate to the correct page
+* Fixed styling issue causing buttons to appear different on different pages
 
 KNOWN BUGS:
+* 
+
+FUTURE WORK:
+* Implement Georgia Tech CAS Login system
+* Coordinate with Georgia Tech Registrar's Office to obtain data usage permissions
+* Collaborate with Georgia Tech OIT to receive server space for data storage and web hosting
+* Implement Notifications that send alerts to appropriate email accounts associated with users' Georgia Tech accounts
 
