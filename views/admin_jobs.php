@@ -65,11 +65,7 @@
 	    echo '<tr align="center">
                 <td class="card">
                     <div class="jobImage">
-<<<<<<< HEAD
                         <a href="admin_job_view.php?id='.$row['job_id'].'">
-=======
-                        <a href="student_job_view.php?id='.$row['job_id'].'">
->>>>>>> parent of 769252f... Revert "Merge branch 'master' of https://github.com/Qman611/BioInternshipPortal"
                             <img src="get_image.php?id='.$row['icon_id'].'" class="imgSize">
                         </a>
                     </div>
