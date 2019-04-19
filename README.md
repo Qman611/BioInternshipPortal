@@ -1,7 +1,7 @@
 # BioInternshipPortal
 Georgia Tech Biology Internship Portal
 
-## Release Notes version BioInternshipPortal 1.0
+## Release Notes version BioInternshipPortal 1.0 ##
 NEW FEATURES:
 - [x] Created login page for users to sign in
 - [x] Implemented user profiles with cookies for maintaining sign-in
@@ -58,7 +58,7 @@ FUTURE WORK:
 - [ ] Docu-sign integration
 - [ ] Filter job listings
 
-## Install Guide BioInternshipPortal 1.0
+## Install Guide BioInternshipPortal 1.0 ##
 PRE-REQUISITES:
 	* A linux machine capable of running PHP and MariaDB
 
