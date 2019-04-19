@@ -35,11 +35,7 @@ BUG FIXES:
 
 KNOWN BUGS:
 - [ ] Data is not secure. Can be remedied by hosting on OIT servers
-- [ ] Stylings are not all uniform
-- [x] All buttons now navigate to the correct page
-- [x] Fixed styling issue causing buttons to appear different on different pages
-
-KNOWN BUGS:
+- [ ] Stylings are not uniform
 - [ ] Edit job listing for employer does not work
 
 FUTURE WORK:
