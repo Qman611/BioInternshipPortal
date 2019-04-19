@@ -1,6 +1,11 @@
 # BioInternshipPortal
 Georgia Tech Biology Internship Portal
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> parent of 769252f... Revert "Merge branch 'master' of https://github.com/Qman611/BioInternshipPortal"
 ## Release Notes version BioInternshipPortal 1.0
 NEW FEATURES:
 - [x] Created login page for users to sign in
@@ -29,6 +34,7 @@ NEW FEATURES:
 	- [x] Notifications
 
 BUG FIXES:
+<<<<<<< HEAD
 - [ ] All buttons now navigate to the correct page
 - [x] Fixed styling issue causing buttons to appear different on different pages
 - [x] Admin was being transferred to a student profile when clicking on a job listing
@@ -36,6 +42,12 @@ BUG FIXES:
 KNOWN BUGS:
 - [ ] Data is not secure. Can be remedied by hosting on OIT servers
 - [ ] Stylings are not all uniform
+=======
+- [x] All buttons now navigate to the correct page
+- [x] Fixed styling issue causing buttons to appear different on different pages
+
+KNOWN BUGS:
+>>>>>>> parent of 769252f... Revert "Merge branch 'master' of https://github.com/Qman611/BioInternshipPortal"
 - [ ] Edit job listing for employer does not work
 
 FUTURE WORK:
@@ -43,6 +55,7 @@ FUTURE WORK:
 - [ ] Coordinate with Georgia Tech Registrar's Office to obtain data usage permissions
 - [ ] Collaborate with Georgia Tech OIT to receive server space for data storage and web hosting
 - [ ] Implement Notifications that send alerts to appropriate email accounts associated with users' Georgia Tech accounts
+<<<<<<< HEAD
 - [ ] Create a student applicant profile page for employers to view
 - [ ] Receive permission to implement Georgia Tech copyrighted web design style
 - [ ] Allow Employers and/or Admin to duplicate job listing
@@ -83,4 +96,20 @@ TROUBLESHOOTING
 	Database connection issues:
 		* Make sure MariaDB is running on the correct port with the correct credentials
 		* PhpMyAdmin can also be used to verify the status of the database
+
+=======
+
+## Install Guide BioInternshipPortal 1.0
+PRE-REQUISITES
+
+DEPENDENCIES
+
+DOWNLOAD INSTRUCTIONS
+
+BUILD INSTRUCTIONS
+
+INSTALLATION
+
+RUNNING APPLICATION
+>>>>>>> parent of 769252f... Revert "Merge branch 'master' of https://github.com/Qman611/BioInternshipPortal"
 
