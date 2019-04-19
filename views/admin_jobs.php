@@ -65,7 +65,7 @@
 	    echo '<tr align="center">
                 <td class="card">
                     <div class="jobImage">
-                        <a href="student_job_view.php?id='.$row['job_id'].'">
+                        <a href="admin_job_view.php?id='.$row['job_id'].'">
                             <img src="get_image.php?id='.$row['icon_id'].'" class="imgSize">
                         </a>
                     </div>
