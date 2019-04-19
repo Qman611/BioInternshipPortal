@@ -29,9 +29,9 @@
             die('User not found: '.$_POST['username']);
         }
         $row = mysqli_fetch_assoc($retval);
-        
+
         //print_r($row);
-        
+
         setcookie("username", $row['user_id']);
         setcookie("usertype", $row['user_type']);
         echo 'Login successful</br>';
@@ -41,7 +41,7 @@
         } elseif ($row['user_type'] == 'employer') {
             $url = 'employer_jobs.php';
         } else {
-            $url = 'user_list.html';
+            $url = 'user_list.php';
         }
         header('Location: ' . $url, true, 303);
     } else {
