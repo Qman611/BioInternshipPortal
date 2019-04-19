@@ -11,11 +11,11 @@
 						<h1>Biology Internship Portal</h1>
 						<p>D'Arcy Wentworth Roper</p>
 						<button class="sidePanelRow">Jobs</button>
-						<button onclick="window.location.href='student_offers.html'" class="sidePanelRow">Offers</button>
-						<button onclick="window.location.href='student_settings.html'" class="sidePanelRow">Settings</button>
-						<a href="BIP_login.html" style = "margin-top: 30px;" class="button">Log Out </a>
+						<button onclick="window.location.href='student_offers.php'" class="sidePanelRow">Offers</button>
+						<button onclick="window.location.href='student_settings.php'" class="sidePanelRow">Settings</button>
+						<a href="BIP_login.php" style = "margin-top: 30px;" class="button">Log Out </a>
 					</div>
-					<div id = infoPanel class = "mainScreen">
+					<div id = "infoPanel" class = "mainScreen">
 						<h1 align = "center" style="font-size: 40px; color: #F0EAD6">Find an Internship</h1>
 
 						<span align="center">
@@ -42,12 +42,9 @@
    if(mysqli_connect_errno() ) {
       die('Could not connect: ' . mysqli_connect_error());
    }
-   //echo 'connection ok';
 
    $sql = "SELECT * FROM job_posting_table ";
    $retval = mysqli_query( $conn, $sql);
-
-   //echo "got back: ".mysqli_num_rows($retval)."rows </br>";
 
    if(! $retval ) {
       die('Could not get data: ' . mysqli_error($conn));
@@ -91,8 +88,6 @@
 
         </tr>';
    }
-
-   //echo "Fetched data successfully\n";
 
    mysqli_close($conn);
 

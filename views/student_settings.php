@@ -5,25 +5,25 @@
 <link rel="stylesheet" href="users.css"/>
 </head>
 <body>
+
 <div style="width: 100%; height: 100vh;min-width: 500px;" id = "container">
     <div id = "row">
             <div id = "sidePanel" class="sidebar">
                 <h1>Biology Internship Portal</h1>
-                <p>Dr. Emily Weigel</p>
-                <button onclick="window.location.href='admin_jobs.html'" class="sidePanelRow">Jobs</button>
-                <button onclick="window.location.href='user_list.html'" class="sidePanelRow">Users</button>
+                <p>D'Arcy Wentworth Roper</p>
+                <button onclick="window.location.href='student_jobs_page.php'" class="sidePanelRow">Jobs</button>
+                <button onclick="window.location.href='student_offers.php'" class="sidePanelRow">Offers</button>
                 <button class="sidePanelRow">Settings</button>
-                <a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
+                <a href="BIP_login.php" style = "margin-top: 30px;" class="button">log out </a>
             </div>
             <div id = infoPanel class = "mainScreen">
                 <h1 align = "center" style="font-size: 40px; color: #F0EAD6"> Settings</h1>
                 <h2 align = "center" style="font-size: 30px; color: #F0EAD6">Notifications</h2>
                 <h3 align ="left" style="font-size: 20px;color: #F0EAD6;margin-left: 40px">Notify me for:</h3>
                 <label for="checkbox">
-                <input type="checkbox" name="newJobs" value="Bike" style="margin-left: 60px"> Job Listing Edited<br>
-                <input type="checkbox" name="newOffers" value="Car" style="margin-left: 60px"> New Job Listing<br>
-                <input type="checkbox" name="rejections" value="Boat" style="margin-left: 60px"> Position has been Fulfilled<br>
-                <input type="checkbox" name="rejections" value="Boat" style="margin-left: 60px"> New Employee Registration<br>
+                <input type="checkbox" name="newJobs" value="Bike" style="margin-left: 60px"> New Jobs<br>
+                <input type="checkbox" name="newOffers" value="Car" style="margin-left: 60px"> New Offers<br>
+                <input type="checkbox" name="rejections" value="Boat" style="margin-left: 60px"> Rejections<br>
                 <h3 align ="left" style="font-size: 20px;color: #F0EAD6;margin-left: 40px">Send me updates:</h3>
                 <label for="checkbox">
                 <input type="checkbox" name="realTime" value="Bike" style="margin-left: 60px"> Real-time<br>
