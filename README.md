@@ -49,7 +49,7 @@ FUTURE WORK:
 - [ ] Allow Students to view status of jobs applied to
 - [ ] Allow Students accept/reject offers
 - [ ] Allow Admin to ban users
-- [ ] Allow Admin to xend announcements to groups of users
+- [ ] Allow Admin to send announcements to groups of users
 - [ ] Allow Admin to view statistics on site usage
 - [ ] Docu-sign integration
 - [ ] Filter job listings
@@ -57,14 +57,15 @@ FUTURE WORK:
 ## Install Guide BioInternshipPortal 1.0 ##
 PRE-REQUISITES:
 * A linux machine capable of running PHP and MariaDB
+* A web browser
 
 DEPENDENCIES:
-* PHP of version 7.2 or higher
-* MariaDB of version 10.2 or higher
-* PhpMyAdmin of version 4.6.6 or higher
+* PHP of version 7.2 or higher (https://php.net/downloads.php)
+* MariaDB of version 10.2 or higher (https://downloads.mariadb.org/)
+* PhpMyAdmin of version 4.6.6 or higher (https://www.phpmyadmin.net/downloads/)
 
 DOWNLOAD INSTRUCTIONS:
-* Download the repository from Github to th intended download location
+* Download the repository from Github to the intended download location
 
 INSTALLATION:
 * Copy files from view folder to {/var/www/html} on the server
