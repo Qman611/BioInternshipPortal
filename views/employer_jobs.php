@@ -32,7 +32,7 @@
     if(mysqli_connect_errno() ) {
       die('Could not connect: ' . mysqli_connect_error());
     }
-    
+
     // replace $employer_id with $id when it's valid
     $sql = "SELECT company_name FROM user_table WHERE user_id='".$id."'";
     //echo $sql;
@@ -51,13 +51,13 @@
 				'.$company_name.'
 				</h1>
 			</div>
-			<button onclick="window.location.href="employer_job_creation.php" style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
+			<button onclick="window.location.href=\'employer_job_creation.php\'"; style="margin-right:20px; margin-bottom:10px; width: 200px; height: 30px"> Create New Job Listing </button>
 
 		</div>
 	</div>
 	<table align="center" style="margin-top:20px">
 			<tbody>';
-	
+
 	// replace $employer_id with $id when it's valid
 	$sql = "SELECT * FROM job_posting_table where employer_id = '".$id."'";
     $retval = mysqli_query( $conn, $sql);
@@ -92,7 +92,7 @@
 
     mysqli_close($conn);
 ?>
-							
+
 					</tbody>
 				</table>
 			</div>
