@@ -78,9 +78,10 @@
                         while ($row2 = mysqli_fetch_assoc($applicants)){
                             $sql = "SELECT * FROM user_table WHERE user_id = '{$row2['student_id']}'";
                             $user = mysqli_fetch_assoc(mysqli_query( $conn, $sql));
-                            $count = $count + 1;
 
-                            echo'
+                            if ($row2['application_status'] != 'Rejected') {
+                                $count = $count + 1;
+                                echo'
 
 								<tr>
 									<td class="tdCount">'.$count.'</td>
@@ -111,6 +112,7 @@
                                         </form>
                                     </td>
 								</tr>';
+                            }
                         }
                         echo '</table>
                             </div>
