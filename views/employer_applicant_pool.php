@@ -62,22 +62,23 @@
                            die('Could not get data: ' . mysqli_error($conn));
                         }
                         $count = 0;
+                        echo '<tr>
+                                    <td class="tdCount">Application<br>Position </td>
+                                    <td class="tdName">Applicant Name</td>
+                                    <td class="tdResume">
+                                        <button>Download All<br>Resumes</button>
+                                    </td>
+                                    <td class="tdCoverLetter">
+                                        <button>Download All<br>Cover Letters</button>
+                                    </td>
+                                </tr>';
                         while ($row2 = mysqli_fetch_assoc($applicants)){
                             $sql = "SELECT * FROM user_table WHERE user_id = '{$row2['student_id']}'";
                             $user = mysqli_fetch_assoc(mysqli_query( $conn, $sql));
                             $count = $count + 1;
 
                             echo'
-								<tr>
-									<td class="tdCount">Application<br>Position </td>
-									<td class="tdName">Applicant Name</td>
-									<td class="tdResume">
-										<button>Download All<br>Resumes</button>
-									</td>
-									<td class="tdCoverLetter">
-										<button>Download All<br>Cover Letters</button>
-									</td>
-								</tr>
+
 								<tr>
 									<td class="tdCount">'.$count.'</td>
 									<td class="tdName">'.$user['first_name'].' '.$user['last_name'].'</td>

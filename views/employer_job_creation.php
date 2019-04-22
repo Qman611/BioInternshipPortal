@@ -15,7 +15,7 @@
             header('Location: ' . $url, true, 303);
             die();
         }
-        
+
     } else {
         echo "Not logged in";
         $url = 'login.php';
@@ -54,10 +54,10 @@
 							<input type="text" name="pos_title" placeholder = "Enter Position Title"style="width: 90%; height: 30px;"></input>
 						</td>
 						<td style="width: 15%">
-							<button type ="submit" onclick="window.location.href='employer_jobs.html'" class="acceptButton">Publish</button>
+							<button type ="submit" onclick="window.location.href='employer_jobs.php'" class="acceptButton">Publish</button>
 						</td>
 						<td style="width: 15%">
-							<button onclick="window.location.href='employer_jobs.html'" class="acceptButton">Discard</button>
+							<button type="button" onclick="window.location.href='employer_jobs.php'" class="acceptButton">Discard</button>
 						</td>
 					</tr>
 				</table>
@@ -65,49 +65,49 @@
 			<div class="container">
 				<div id="containerLeft">
 					<label class="criteriaHeader">Job Description</label>
-					<textarea class="criteriaInfo" placeholder="Enter Text" rows="4"></textarea>
-					
+					<textarea name="job_desc" class="criteriaInfo" placeholder="Enter Text" rows="4"></textarea>
+
 					<label class="criteriaHeader">Qualifications</label>
-					<textarea class="criteriaInfo" placeholder="Enter Text" rows="4"></textarea>
-					
+					<textarea class="criteriaInfo" name="qualification" placeholder="Enter Text" rows="4"></textarea>
+
 					<label class="criteriaHeader">Responsibilities</label>
-					<textarea class="criteriaInfo" placeholder="Enter Text" rows="4"></textarea>
-					
+					<textarea class="criteriaInfo" name="responsibility" placeholder="Enter Text" rows="4"></textarea>
+
 					<label class="criteriaHeader">Location</label>
-					<input class="criteriaInfo" placeholder="City, State, Country" style="height: 30px;"></input>
-					
+					<input class="criteriaInfo" name="location" placeholder="City, State, Country" style="height: 30px;"></input>
+
 					<label class="criteriaHeader">Work Term</label>
-					<textarea class="criteriaInfo" placeholder="Enter Text" rows="4"> </textarea>
-					
+					<textarea class="criteriaInfo" name="work_term" placeholder="Enter Text" rows="4"> </textarea>
+
 					<label class="criteriaHeader">Desired Start Date</label>
-					<input type="date" class="criteriaInfo" style="height: 30px;"></input>
-					
+					<input type="date" name="start_date" class="criteriaInfo" style="height: 30px;"></input>
+
 					<label class="criteriaHeader">Security Clearance</label>
-					<select class="criteriaInfo" style="height: 30px;">
+					<select name="security" class="criteriaInfo" style="height: 30px;">
 						<option value="0">N/A</option>
 						<option value="1">level 1</option>
 						<option value="2">level 2</option>
 						<option value="3">level 3</option>
 						<option value="4">level 4</option>
 					</select>
-					
+
 				</div>
-				
+
 				<div id="containerRight">
 					<label class="criteriaHeader">Deadline to Apply</label>
-					<input type="date" class="criteriaInfo" style="height: 30px;"></input>
-					
+					<input type="date" name="deadline" class="criteriaInfo" style="height: 30px;"></input>
+
 					<label class="criteriaHeader">Research Area</label>
-					<select class="criteriaInfo" style="height: 30px;">
+					<select name="research_area" class="criteriaInfo" style="height: 30px;">
 						<option value="0">N/A</option>
 						<option value="1">Type 1</option>
 						<option value="2">Type 2</option>
 						<option value="3">Type 3</option>
 						<option value="4">Type 4</option>
 					</select>
-					
+
 					<label class="criteriaHeader">Degree Level</label>
-					<select class="criteriaInfo" style="height: 30px;">
+					<select name="degree_level" class="criteriaInfo" style="height: 30px;">
 						<option value="0">N/A</option>
 						<option value="1">High School</option>
 						<option value="2">Some College</option>
@@ -115,16 +115,20 @@
 						<option value="4">Masters</option>
 						<option value="4">PHD</option>
 					</select>
-					
+
 					<label class="criteriaHeader">Minimum GPA</label>
-					<input class="criteriaInfo" placeholder="Enter Value From 0.0 - 4.0"></input>
-					
+					<input name="min_gpa" class="criteriaInfo" placeholder="Enter Value From 0.0 - 4.0"></input>
+
 					<label class="criteriaHeader">Work Authorization </label>
-					<input class="criteriaInfo" placeholder="Enter Text" ></input>
-					
+					<select name="work_auth" class="criteriaInfo" placeholder="Enter Text" >
+						<option value="No Restriction">No Restriction</option>
+						<option value="US Citizen">US Citizen</option>
+						<option value="Other">Other</option>
+					</select>
+
 					<label class="criteriaHeader">Abstract</label>
-					<textarea class="criteriaInfo" placeholder="Enter Text" rows="4" maxlength="140"></textarea>
-				</div>			
+					<textarea name="abstract" class="criteriaInfo" placeholder="Enter Text" rows="4" maxlength="140"></textarea>
+				</div>
 			</div>
             </form>
         <div id= "createJobForm">
