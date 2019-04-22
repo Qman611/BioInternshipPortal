@@ -7,6 +7,7 @@
 </head>
 <body>
 <?php
+    $id = (string)$_COOKIE['username'];
 	error_reporting(E_ALL);
     ini_set('display_errors', 'on');
     $dbhost = 'localhost:3306';
@@ -20,7 +21,7 @@
     }
    //echo 'connection ok';
 
-    $sql = "SELECT * FROM job_posting_table WHERE employer_id = '1234'";
+    $sql = "SELECT * FROM job_posting_table WHERE employer_id = '{$id}'";
     $retval = mysqli_query( $conn, $sql);
 
    //echo "got back: ".mysqli_num_rows($retval)."rows </br>";
