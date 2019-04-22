@@ -65,7 +65,7 @@
                         echo '<tr>
                                     <td class="tdCount">Application<br>Position </td>
                                     <td class="tdName">Applicant Name</td>
-                                    <td class="tdStatus"></td>
+                                    <td class="tdStatus">Status</td>
                                     <td class="tdResume">
                                         <button type="submit">Download All<br>Resumes</button>
                                     </td>
