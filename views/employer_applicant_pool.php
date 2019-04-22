@@ -65,12 +65,15 @@
                         echo '<tr>
                                     <td class="tdCount">Application<br>Position </td>
                                     <td class="tdName">Applicant Name</td>
+                                    <td class="tdStatus"></td>
                                     <td class="tdResume">
-                                        <button>Download All<br>Resumes</button>
+                                        <button type="submit">Download All<br>Resumes</button>
                                     </td>
                                     <td class="tdCoverLetter">
-                                        <button>Download All<br>Cover Letters</button>
+                                        <button type="submit">Download All<br>Cover Letters</button>
                                     </td>
+                                    <td class="tdAccept"></td>
+                                    <td class="tdAccept"></td>
                                 </tr>';
                         while ($row2 = mysqli_fetch_assoc($applicants)){
                             $sql = "SELECT * FROM user_table WHERE user_id = '{$row2['student_id']}'";
@@ -93,14 +96,14 @@
                                             <button type="submit">View Cover Letter</button>
                                         </a>
                                     </td>
-                                    <td class="tdCoverLetter">
+                                    <td class="tdAccept">
                                         <form action="update_application_status.php" id="form" method="post" name="form">
                                             <input type="hidden" id="id" name="id" value='.$row2['job_application_id'].'>
                                             <input type="hidden" id="update" name="update" value="Accepted">
                                             <button type="submit">Accept</button>
                                         </form>
                                     </td>
-                                    <td class="tdCoverLetter">
+                                    <td class="tdAccept">
                                         <form action="update_application_status.php" id="form" method="post" name="form">
                                             <input type="hidden" id="id" name="id" value='.$row2['job_application_id'].'>
                                             <input type="hidden" id="update" name="update" value="Rejected">
