@@ -4,7 +4,7 @@
     //print_r($_FILES['icon_upload']);
 
     //echo '</br>';
-    
+
 
 
     $dbhost = 'localhost:3306';
@@ -12,7 +12,7 @@
     $dbpass = 'portal-password';
 
     $conn = mysqli_connect($dbhost, $dbuser, $dbpass, 'BioInternshipPortal_db');
-    
+
     if (array_key_exists('username', $_COOKIE) && array_key_exists('usertype', $_COOKIE)) {
         $employer_id = (string)$_COOKIE['username'];
         $employer_id = mysqli_escape_string($conn,$employer_id);
@@ -22,7 +22,7 @@
         header('Location: ' . $url, true, 303);
         die();
     }
-    
+
     $file_content = mysqli_escape_string($conn, file_get_contents($_FILES['icon_upload']['tmp_name']));
     //$file_content = 'file content goes here'
     if(mysqli_connect_errno() ) {
@@ -36,7 +36,7 @@
         $last_id = mysqli_insert_id($conn);
         //echo "Records inserted successfully. Last inserted ID is: " . $last_id;
         //Now add job entry
-        
+
         $pos_title = mysqli_escape_string($conn,$_POST['pos_title']);
         $job_desc = mysqli_escape_string($conn,$_POST['job_desc']);
         $qualification = mysqli_escape_string($conn,$_POST['qualification']);
@@ -93,7 +93,7 @@
     } else{
         echo "ERROR: Could not able to execute $sql. " . mysqli_error($conn);
     }
-    echo '</br><a href="javascript:history.back()">Go Back</a>';
+    echo '</br><a href="employer_jobs.php">Continue</a>';
     //echo 'image upload done';
     //TODO: Add job listing
     mysqli_close($conn);

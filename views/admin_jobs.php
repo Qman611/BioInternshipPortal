@@ -11,8 +11,8 @@
 						<h1>Biology Internship Portal</h1>
 						<p>Dr. Emily Weigel</p>
 						<button class="sidePanelRow">Jobs</button>
-						<button onclick="window.location.href='user_list.html'" class="sidePanelRow">Users</button>
-						<button onclick="window.location.href='admin_settings.html'" class="sidePanelRow">Settings</button>
+						<button onclick="window.location.href='user_list.php'" class="sidePanelRow">Users</button>
+						<button onclick="window.location.href='admin_settings.php'" class="sidePanelRow">Settings</button>
 						<a href="BIP_login.html" style = "margin-top: 30px;" class="button">log out </a>
 					</div>
 					<div id = infoPanel class = "mainScreen">
