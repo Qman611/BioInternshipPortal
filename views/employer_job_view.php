@@ -32,9 +32,9 @@
 		<div id = "sidePanel" class="sidebar">
 			<h1>Biology Internship Portal</h1>
             <p>D'Arcy Wentworth Roper</p>
-						<button onclick="window.location.href='student_jobs_page.php'" class="sidePanelRow">Jobs</button>
-						<button onclick="window.location.href='student_offers.php'" class="sidePanelRow">Offers</button>
-						<button onclick="window.location.href='student_settings.php'" class="sidePanelRow">Settings</button>
+						<button onclick="window.location.href='employer_jobs.php'" class="sidePanelRow">Jobs</button>
+						<button onclick="window.location.href='employer_applicant_pool.php'" class="sidePanelRow">Applicants</button>
+						<button onclick="window.location.href='employer_settings.php'" class="sidePanelRow">Settings</button>
 			<a href="BIP_login.php" style = "margin-top: 30px;" class="button">Log Out </a>
 		</div>
 		<div id = "infoPanel" class = "mainScreen">
@@ -61,15 +61,12 @@
 							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">'.$row['job_title'].'</label>
 						</td>
 						<td>
-							<button onclick="window.location.href=\'student_jobs_page.php\'" style="width: 90%; height: 30px;">Go Back</button>
+							<button onclick="window.location.href=\'employer_jobs.php\'" style="width: 90%; height: 30px;">Go Back</button>
 						</td>
 					</tr>
 					<tr>
 						<td>
 							<label style="width: 90%; height: 30px;font-weight: bold; font-size: 40px;">'.$company_name.'</label>
-						</td>
-						<td>
-							<button id="popup" onclick="div_show()" style="width: 90%; height: 30px;">Apply</button>
 						</td>
 					</tr>
 				</table>

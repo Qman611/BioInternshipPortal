@@ -71,7 +71,9 @@
     	echo '<tr align="center">
 				<td class="card">
 					<div class="jobImage">
-						<img src="get_image.php?id='.$row['icon_id'].'" class="imgSize">
+					    <a href="employer_job_view.php?id='.$row['job_id'].'">
+							<img src="get_image.php?id='.$row['icon_id'].'" class="imgSize">
+						</a>
 					</div>
 					<div class="jobInfo">
 						<h3>'.$row['job_title'].'</h3>
