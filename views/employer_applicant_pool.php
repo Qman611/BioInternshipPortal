@@ -71,6 +71,7 @@
 								<tr>
 									<td class="tdCount">'.$count.'</td>
 									<td class="tdName">'.$user['first_name'].' '.$user['last_name'].'</td>
+                                    <td class="tdStatus">'.$row2['application_status'].'</td>
 									<td class="tdResume">
                                         <a href="get_resume.php?id='.$row2['resume_id'].'">
                                             <button type="submit">View Resume</button>
