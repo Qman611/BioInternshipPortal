@@ -69,6 +69,16 @@
 
                             echo'
 								<tr>
+									<td class="tdCount">Application<br>Position </td>
+									<td class="tdName">Applicant Name</td>
+									<td class="tdResume">
+										<button>Download All<br>Resumes</button>
+									</td>
+									<td class="tdCoverLetter">
+										<button>Download All<br>Cover Letters</button>
+									</td>
+								</tr>
+								<tr>
 									<td class="tdCount">'.$count.'</td>
 									<td class="tdName">'.$user['first_name'].' '.$user['last_name'].'</td>
 									<td class="tdResume">
