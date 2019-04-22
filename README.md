@@ -37,6 +37,7 @@ KNOWN BUGS:
 - [ ] Data is not secure. Can be remedied by hosting on OIT servers
 - [ ] Stylings are not uniform
 - [ ] Edit job listing for employer does not work
+- [ ] Discard job listing for employer does not work
 
 FUTURE WORK:
 - [ ] Implement Georgia Tech CAS Login system
